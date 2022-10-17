@@ -21,8 +21,10 @@
 	},
 	"lint-staged": {
 		"src/**/*.{js,jsx}": [
-			"eslint",
-			"prettier --write"
+			"eslint"
+		],
+		"./**/*.{js,jsx,json,html,md}": [
+			"prettier --write --config ./.prettierrc.json"
 		]
 	},
 	"browserslist": {
